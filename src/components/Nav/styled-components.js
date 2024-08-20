@@ -8,7 +8,7 @@ export const NavContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-size: 12px;
+    font-size: 15px;
 `
 
 export const OptionContainer = styled.div`

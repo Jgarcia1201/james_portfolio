@@ -12,7 +12,7 @@ const HomePage = () => {
                 <span>applications paired</span>
                 <span>with intuitive</span>
                 <span>user interfaces.</span>
-                <span>I’m always looking</span>
+                <span>Always looking</span>
                 <span>for new challenges.</span>
             </Bio>
         </HomeContainer>

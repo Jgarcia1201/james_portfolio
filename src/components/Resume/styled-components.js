@@ -54,6 +54,7 @@ export const EntryBody = styled.div`
     flex-direction: column;
     align-self: flex-end;
     gap: 36px;
+    font-size: 14px;
     text-align: right;
     max-width: 350px;
 `

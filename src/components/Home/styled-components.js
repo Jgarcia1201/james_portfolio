@@ -13,7 +13,7 @@ export const HomeContainer = styled.div`
 `
 
 export const Bio = styled.p`
-    line-height: 18px;
+    line-height: 24px;
     text-align: right;
     font-size: 14px;
     white-space: nowrap;
