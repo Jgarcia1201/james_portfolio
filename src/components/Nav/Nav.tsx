@@ -1,7 +1,6 @@
 import { NavContainer } from './styled-components'
 import { navOptions } from './navOptions'
 import Option from './Option'
-import { RefObject } from 'react'
 
 interface NavProps {
     currentPage: String,

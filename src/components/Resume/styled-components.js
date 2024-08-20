@@ -58,3 +58,13 @@ export const EntryBody = styled.div`
     text-align: right;
     max-width: 350px;
 `
+
+export const ResumeLink = styled.a`
+    border: 1px solid white;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    padding: 8px;
+`
