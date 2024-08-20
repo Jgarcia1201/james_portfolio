@@ -14,6 +14,7 @@ const Nav: React.FC<NavProps> = ({ currentPage, onNavigate }) => {
             {navOptions.map((op) => {
                 return (
                     <Option 
+                        key={op.val}
                         onNavigate={onNavigate}
                         option={op} 
                         isSelected={currentPage === op.val} 

@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
                 <WorkExpContainer>
                     {resumeData.workExp.map((exp) => {
                         return (
-                            <ResumeEntry expEntry={exp} />
+                            <ResumeEntry key={exp.company} expEntry={exp} />
                         )
                     })}
                 </WorkExpContainer>
@@ -20,7 +20,7 @@ const Resume: React.FC = () => {
                 <h1>Education</h1>
                 {resumeData.education.map((exp) => {
                     return (
-                        <EduExpEntry expEntry={exp} />
+                        <EduExpEntry key={exp.graduationDate} expEntry={exp} />
                     )
                 })}
                 

@@ -15,8 +15,8 @@ const ResumeEntry: React.FC<WorkExpEntryProps> = ({ expEntry }) => {
                 <p>{startDate} - {endDate}</p>
             </EntryHeader>
             <EntryBody>
-                {bulletPoints.map((point) => {
-                    return (<p>- {point}</p>)
+                {bulletPoints.map((point, i) => {
+                    return (<p key={i}>- {point}</p>)
                 })}
             </EntryBody>
             

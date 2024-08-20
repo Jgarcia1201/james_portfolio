@@ -12,13 +12,7 @@ const PortfolioApp = () => {
     const navOptionRef = useRef<HTMLDivElement>(null)
 
     const [ currentPage, setCurrentPage ] = useState<String>('home')
-    const [ showLoader, setShowLoader ] = useState<Boolean>(true)
-
-    useEffect(() => {
-        setTimeout(() => {
-            setShowLoader(false)
-        }, 3000)
-    }, [])
+    // const [ showLoader, setShowLoader ] = useState<Boolean>(true) TODO: IMPLEMENT LOADER
 
     function handlePageNavigation(page: String) {
         if (contentRef && contentRef.current) {
@@ -34,28 +28,24 @@ const PortfolioApp = () => {
 
     return (
         <>
-            {showLoader ? 
-                (<>Loading</>) :
-                (
-                    <MainContainer id='main-container'>
-                        <BackgroundAnimation currentPage={currentPage} />
-                        <Display>
-                            <NameNavContainer>
-                                <NameContainer>
-                                    <h2 id='title-name'>James Garcia</h2>
-                                    <p id='title-desc'>Full Stack Software Developer</p>
-                                </NameContainer>
-                                <Nav
-                                    currentPage={currentPage}
-                                    onNavigate={handlePageNavigation}
-                                />
-                            </NameNavContainer>
-                            <ContentContainer ref={contentRef}>
-                                {renderPage(currentPage)}
-                            </ContentContainer>
-                        </Display>
-                    </MainContainer>
-                )}
+            <MainContainer id='main-container'>
+                <BackgroundAnimation currentPage={currentPage} />
+                <Display>
+                    <NameNavContainer>
+                        <NameContainer>
+                            <h2 id='title-name'>James Garcia</h2>
+                            <p id='title-desc'>Full Stack Software Developer</p>
+                        </NameContainer>
+                        <Nav
+                            currentPage={currentPage}
+                            onNavigate={handlePageNavigation}
+                        />
+                    </NameNavContainer>
+                    <ContentContainer ref={contentRef}>
+                        {renderPage(currentPage)}
+                    </ContentContainer>
+                </Display>
+            </MainContainer>
         </>
     )
 }

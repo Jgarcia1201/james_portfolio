@@ -2,13 +2,6 @@
 
 import styled from "styled-components"
 
-const pageToAnimationMap = {
-    'home': 'rotate(0.05turn)',
-    'contact': 'rotate(0.075turn)',
-    'resume': 'rotate(-0.05turn)',
-    'projects': 'rotate(-0.065turn)'
-}
-
 export const AnimationContainer = styled.div`
     width: 100%;
     height: 100%;
