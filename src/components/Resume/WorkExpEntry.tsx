@@ -19,8 +19,6 @@ const ResumeEntry: React.FC<WorkExpEntryProps> = ({ expEntry }) => {
                     return (<p key={i}>- {point}</p>)
                 })}
             </EntryBody>
-            
-
         </ExpEntryContainer>
     )
 }
