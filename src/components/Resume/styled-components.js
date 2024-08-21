@@ -7,6 +7,15 @@ export const ResumeContainer = styled.div`
     height: 70%;
     display: flex;
     flex-direction: column;
+    align-items: end;
+    gap: 12px;
+`
+
+export const ScrollContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 32px 0;
     gap: 32px;
     align-items: end;
@@ -62,6 +71,7 @@ export const EntryBody = styled.div`
 export const ResumeLink = styled.a`
     border: 1px solid white;
     height: 25px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
