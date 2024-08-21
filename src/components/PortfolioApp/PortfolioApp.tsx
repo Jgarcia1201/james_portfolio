@@ -18,7 +18,10 @@ const PortfolioApp = () => {
 
     useEffect(() => {
         // Hide FOUC
-        fadeIn(mainDisplayRef)
+        setTimeout(() => {
+            fadeIn(mainDisplayRef)
+        }, 500)
+
         setTimeout(() => {
             setShowLoader(false)
         }, loadInterval + 500)

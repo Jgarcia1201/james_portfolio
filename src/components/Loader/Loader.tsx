@@ -7,7 +7,6 @@ const Loader: React.FC = () => {
 
     useEffect(() => {
         if (loaderRef) {
-            fadeIn(loaderRef)
             setTimeout(() => {
                 fadeOut(loaderRef)
             }, loadInterval)
@@ -37,6 +36,5 @@ const LoaderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     transition: 1s;
 `
