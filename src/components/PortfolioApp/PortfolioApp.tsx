@@ -1,18 +1,25 @@
 'use client'
 
 import { MainContainer, Display, NameNavContainer, ContentContainer, NameContainer } from "./styled-components"
-import { useRef, useState, useEffect } from "react"
+import { useEffect, useRef, useState } from "react"
 import { fadeOut, fadeIn, pageChangeInterval } from "@/helpers/animations"
 import renderPage from "./render"
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation"
 import Nav from "../Nav/Nav"
+import Loader from "../Loader/Loader"
 
 const PortfolioApp = () => {
     const contentRef = useRef<HTMLDivElement>(null)
     const navOptionRef = useRef<HTMLDivElement>(null)
+    const mainDisplayRef = useRef<HTMLDivElement>(null)
 
     const [ currentPage, setCurrentPage ] = useState<String>('home')
-    // const [ showLoader, setShowLoader ] = useState<Boolean>(true) TODO: IMPLEMENT LOADER
+    const [ showLoader, setShowLoader ] = useState<Boolean>(true)
+
+    useEffect(() => {
+        // Hide FOUC
+        fadeIn(mainDisplayRef)
+    }, [])
 
     function handlePageNavigation(page: String) {
         if (contentRef && contentRef.current) {
@@ -28,7 +35,12 @@ const PortfolioApp = () => {
 
     return (
         <>
-            <MainContainer id='main-container'>
+            <MainContainer 
+                id='main-container' 
+                style={{ opacity: 0 }} // Hide FOUC
+                ref={mainDisplayRef}
+            >
+                {showLoader  && <Loader />}
                 <BackgroundAnimation currentPage={currentPage} />
                 <Display>
                     <NameNavContainer>
