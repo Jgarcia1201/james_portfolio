@@ -19,6 +19,9 @@ const PortfolioApp = () => {
     useEffect(() => {
         // Hide FOUC
         fadeIn(mainDisplayRef)
+        setTimeout(() => {
+            setShowLoader(false)
+        }, 2500)
     }, [])
 
     function handlePageNavigation(page: String) {

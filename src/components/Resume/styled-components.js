@@ -67,4 +67,9 @@ export const ResumeLink = styled.a`
     align-items: center;
     justify-self: end;
     padding: 8px;
+    transition: 0.5s;
+    &:hover {
+        background: white;
+        color: black;
+    }
 `
