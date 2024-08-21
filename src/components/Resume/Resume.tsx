@@ -4,9 +4,12 @@ import ResumeEntry from './WorkExpEntry'
 import EduExpEntry from './EduExpEntry'
 
 const Resume: React.FC = () => {
+
+    const resumePdfPath = window.location.href.includes('localhost') ? '/RES.pdf' : 'james_portfolio/RES.pdf'
+
     return (
         <ResumeContainer>
-            <ResumeLink href="/RES.pdf" download>Download Resume</ResumeLink>
+            <ResumeLink href={resumePdfPath} download>Download Resume</ResumeLink>
             <ExpSection>
                 <h1>Professional Experience</h1>
                 <WorkExpContainer>
