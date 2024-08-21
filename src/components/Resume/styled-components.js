@@ -8,7 +8,7 @@ export const ResumeContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 12px;
+    gap: 16px;
 `
 
 export const ScrollContainer = styled.div`
