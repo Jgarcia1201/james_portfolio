@@ -6,7 +6,7 @@ import EduExpEntry from './EduExpEntry'
 const Resume: React.FC = () => {
     return (
         <ResumeContainer>
-            <ResumeLink href="/RES.pdf" download>Download Resume</ResumeLink>
+            <ResumeLink href="/RES.pdf" target="_blank">Download Resume</ResumeLink>
             <ExpSection>
                 <h1>Professional Experience</h1>
                 <WorkExpContainer>
