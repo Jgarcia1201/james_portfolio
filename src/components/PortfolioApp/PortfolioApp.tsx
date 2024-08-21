@@ -2,7 +2,7 @@
 
 import { MainContainer, Display, NameNavContainer, ContentContainer, NameContainer } from "./styled-components"
 import { useEffect, useRef, useState } from "react"
-import { fadeOut, fadeIn, pageChangeInterval } from "@/helpers/animations"
+import { fadeOut, fadeIn, pageChangeInterval, loadInterval } from "@/helpers/animations"
 import renderPage from "./render"
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation"
 import Nav from "../Nav/Nav"
@@ -21,7 +21,7 @@ const PortfolioApp = () => {
         fadeIn(mainDisplayRef)
         setTimeout(() => {
             setShowLoader(false)
-        }, 2500)
+        }, loadInterval + 500)
     }, [])
 
     function handlePageNavigation(page: String) {

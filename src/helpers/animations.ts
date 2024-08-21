@@ -12,3 +12,5 @@ export function fadeIn(ref: RefObject<HTMLDivElement>) {
         ref.current.style.opacity = '1';
     }
 }
+
+export const loadInterval: number = 2000;

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { useEffect, useRef } from "react"
-import { fadeIn, fadeOut } from "@/helpers/animations"
+import { fadeIn, fadeOut, loadInterval } from "@/helpers/animations"
 
 const Loader: React.FC = () => {
     const loaderRef = useRef<HTMLDivElement>(null)
@@ -10,7 +10,7 @@ const Loader: React.FC = () => {
             fadeIn(loaderRef)
             setTimeout(() => {
                 fadeOut(loaderRef)
-            }, 2000)
+            }, loadInterval)
         }
     }, [])
 
