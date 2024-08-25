@@ -12,4 +12,8 @@ export const ProjectEntryLink = styled.a`
     &:hover {
         transform: scale(1.02);
     }
+
+    h1 {
+        font-size: 16px;
+    }
 `
