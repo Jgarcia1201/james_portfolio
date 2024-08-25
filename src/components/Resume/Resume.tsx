@@ -1,23 +1,25 @@
-import { ExpSection, ResumeContainer, WorkExpContainer, ResumeLink, ScrollContainer } from './styled-components'
+import { InfoSectionContainer, InfoPageContainer, InfoSection, ScrollContainer } from '@/components/shared/styled-components'
+import { ResumeLink } from './styled-components'
 import { resumeData } from './resumeData'
 import ResumeEntry from './WorkExpEntry'
 import EduExpEntry from './EduExpEntry'
 
+
 const Resume: React.FC = () => {
     return (
-        <ResumeContainer>
+        <InfoPageContainer>
             <ScrollContainer>
-                <ExpSection>
+                <InfoSectionContainer>
                     <h1>Professional Experience</h1>
-                    <WorkExpContainer>
+                    <InfoSection>
                         {resumeData.workExp.map((exp) => {
                             return (
                                 <ResumeEntry key={exp.company} expEntry={exp} />
                             )
                         })}
-                    </WorkExpContainer>
-                </ExpSection>
-                <ExpSection>
+                    </InfoSection>
+                </InfoSectionContainer>
+                <InfoSectionContainer>
                     <h1>Education</h1>
                     {resumeData.education.map((exp) => {
                         return (
@@ -25,10 +27,10 @@ const Resume: React.FC = () => {
                         )
                     })}
 
-                </ExpSection>
+                </InfoSectionContainer>
             </ScrollContainer>
             <ResumeLink href="RES.pdf" target="_blank">View PDF</ResumeLink>
-        </ResumeContainer>
+        </InfoPageContainer>
     )
 }
 
