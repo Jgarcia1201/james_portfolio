@@ -29,7 +29,7 @@ const Resume: React.FC = () => {
 
                 </InfoSectionContainer>
             </ScrollContainer>
-            <ResumeLink href="RES.pdf" target="_blank">View PDF</ResumeLink>
+            <ResumeLink href="resume_.pdf" target="_blank">View PDF</ResumeLink>
         </InfoPageContainer>
     )
 }

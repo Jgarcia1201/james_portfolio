@@ -3,28 +3,33 @@
 const workExp = [
     {
         company: "Echo360", 
-        title: "Software Engineer",
+        title: "Software Engineer II",
         startDate: "September 2022",
         endDate: "Current",
         bulletPoints: [
-            "Improved data processing for EchoVideo's in-browser video capture software, by integrating a  segmentation model that reduced GPU utilization by 30\% while enabling background swapping and blurring",
-            "Designed and developed a heavily used file archiving system  with scheduled removal of archived files based on user-defined intervals.",
-            "Wrote UI & backend logic used to integrate Zoom into EchoVideo, allowing users to automatically add Zoom recordings into their library.",
-            "Added cookieless authentication to media player to be used by publicly available links and LMS platforms such as Canvas and Blackboard.",
-            "Participated in customer meetings with users accessing EchoVideo via Blackboard and Canvas to gather and analyze requirements."
+            "Led a team of 4 engineers to architect a Media Details user interface and microservice using React, Scala, and Python, effectively addressing multiple customer requirements and enhancing user experience.",
+            "Spearheaded the migration from a monolithic architecture to a microservices-based system, improving deployment speed and system maintainability.",
+            "Mentored and onboarded junior developers, improving team productivity and accelerating ramp-up time.",
+            "Led high-priority feature development under tight deadlines, directly contributing to $4M in revenue during a major sales conference.",
+            "Architected a robust file archiving system with React, Scala, and Python, automating redundant file removal and significantly cutting DynamoDB storage costs.",
+            "Acted as the primary contact between development and other departments, streamlining client issue resolution and improving response times.",
+            "Built a comprehensive test suite for EchoVideo's media player using Jest and React Testing Library, achieving a 70% reduction in media player outages and enhancing platform reliability."
         ]
     },
     {
-        company: "JGETX Food Distribution and Restaurant Equipment",
-        title: "Systems Engineer",
-        startDate: "September 2017",
-        endDate: "July 2022",
+        company: "Echo360", 
+        title: "Software Engineer",
+        startDate: "September 2022",
+        endDate: "January 2023",
         bulletPoints: [
-            "Utilized Java and ElectronJS to design and implement an inventory management system for tracking small parts used in restaurant repairs and setups, enhancing operational efficiency.",
-            "Managed end-to-end technical setups for restaurants, encompassing software installation, onboarding clients onto delivery applications, and website development using ReactJS, ensuring seamless integration of digital solutions to enhance restaurant operations and customer experience.",
-            "Delivered continued technical support to clients, proficiently resolving both hardware and software issues, including troubleshooting Broaster Pressure fryers."
+            "Developed a distributed caching solution with Redis and Java for JWT token management, ensuring secure LMS integrations with Canvas and Blackboard.",
+            "Enhanced in-browser video capture software by integrating a segmentation model, optimizing GPU utilization to below 25%, and enabling virtual backgrounds for end users.",
+            "Refactored legacy Scala services, improving maintainability, reducing technical debt, and optimizing backend performance.",
+            "Improved front-end performance for React applications, optimizing rendering efficiency and reducing page load times.",
+            "Developed reusable UI components in TypeScript, improving development speed and maintaining design consistency across applications.",
+            "Collaborated with UX designers to enhance accessibility and usability across Echo360's suite of products, ensuring compliance with WCAG standards."
         ]
-    }
+    },
 ]
 
 const eduExp = [
